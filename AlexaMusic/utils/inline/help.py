@@ -17,6 +17,20 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from AlexaMusic import app
 
 
+def help_back_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_["BACK_BUTTON"], callback_data=f"settings_back_helper"
+                ),
+                InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
+            ]
+        ]
+    )
+    return upl
+
+
 def support_group_markup(_):
     upl = InlineKeyboardMarkup(
         [
