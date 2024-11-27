@@ -14,7 +14,8 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
 
-from config import , SUPPORT_CHANNEL, SUPPORT_GROUP, OWNER_ID
+from config import , GİTHUB
+ SUPPORT_CHANNEL, SUPPORT_GROUP, OWNER_ID
 from AlexaMusic import app
 
 
